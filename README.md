@@ -16,6 +16,6 @@ Goals for next meeting:
 * Unit testing framework? 
 
 
-###And Remember, as always...be the beer
+### And Remember, as always...be the beer
 
 
