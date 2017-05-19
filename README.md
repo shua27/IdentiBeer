@@ -11,7 +11,11 @@ Goals for next meeting:
         * Hash cap
     * Remove cap 
     * Compare two caps 
+    * Cap check binary --> Tells you yes or no for existence of a cap
+    * Cap check with a parameterized threshold 
+* Unit testing framework? 
 
-BE the beer
---- 
+
+###And Remember, as always...be the beer
+
 
