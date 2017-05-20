@@ -1,5 +1,11 @@
 cmake_minimum_required(VERSION 3.7)
-project(untitled1)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+set(CMAKE_CXX_STANDARD 14)
+
+project(Identibeer)
 
 include_directories(${src})
 
@@ -11,8 +17,3 @@ add_executable(DisplayImage src/main.cpp)
 target_link_libraries(DisplayImage ${OpenCV_LIBS})
 
 
-
-set(CMAKE_CXX_STANDARD 11)
-
-set(SOURCE_FILES src/main.cpp)
-add_executable(CapTure ${SOURCE_FILES})
