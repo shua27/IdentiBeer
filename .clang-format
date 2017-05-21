@@ -1,6 +1,7 @@
-# BasedOnStyle:  Mozilla
+# BasedOnStyle:  Google
 AccessModifierOffset: -4
 AlignEscapedNewlinesLeft: true
+AlignConsecutiveAssignments: true
 AllowAllParametersOfDeclarationOnNextLine: false
 AllowShortIfStatementsOnASingleLine: false
 AllowShortLoopsOnASingleLine: false
