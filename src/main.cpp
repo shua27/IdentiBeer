@@ -11,6 +11,8 @@
 #include <opencv2/opencv.hpp>
 #include <vector>
 
+auto static const DEFAULT_IMAGE_PATH = "../../sampleImages/troegs.jpeg";
+
 bool displayImage(std::string imagePath)
 {
     bool retVal(false);
@@ -106,17 +108,19 @@ bool cropCap(std::string imagePath)
 
 int main(int argc, char **argv)
 {
-    bool retVal(false);
+    std::string imagePath;
 
-    if (argc == 2)
+    switch (argc)
     {
-        auto imagePath(argv[1]);
-        retVal = cropCap(imagePath);
+        case 1:
+            imagePath = DEFAULT_IMAGE_PATH;
+            break;
+        case 2:
+            imagePath = argv[1];
+            break;
+        default:
+            std::cout << "usage: DisplayImage.out <Image_Path>\n";
     }
-    else
-    {
-        std::cout << "usage: DisplayImage.out <Image_Path>\n";
-    };
 
-    return retVal;
+    return cropCap(imagePath);
 }
